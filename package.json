@@ -1,0 +1,29 @@
+{
+  "name": "remark-mdi",
+  "version": "1.0.0",
+  "description": "Plugin for material design icons in markdown",
+  "main": "lib/index.js",
+  "author": "Balthasar Hofer <lebalz@outlook.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lebalz/remark-mdi.git"
+  },
+  "scripts": {
+    "format": "remark . -qfo --ignore-pattern test/ && prettier . -w --loglevel warn && xo --fix",
+    "test-api": "node --conditions development test/index.js",
+    "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov npm run test-api",
+    "test": "npm run test-coverage"
+  },
+  "devDependencies": {
+    "remark": "^12.0.1",
+    "remark-mdx": "^1.6.21"
+  },
+  "dependencies": {
+    "unist-util-visit": "^2.0.3"
+  },
+  "engines": {
+    "node": ">=16.14"
+  }
+}
