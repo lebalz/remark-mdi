@@ -1,6 +1,6 @@
 {
   "name": "remark-mdi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for material design icons in markdown",
   "main": "lib/index.js",
   "author": "Balthasar Hofer <lebalz@outlook.com>",
