@@ -17,7 +17,7 @@ Yields:
     type: 'mdi',
     mdi: 'robot',
     data: {
-        hName: 'span',
+        hName: 'i',
         icon: 'robot',
         hProperties: {
             className: ['mdi-robot', 'mdi']
@@ -28,8 +28,15 @@ Yields:
 
 ## Rehype
 
-This plugin is compatible with [rehype][https://github.com/rehypejs/rehype]. `mdi` mdast nodes (e.g. `:mdi-robot:`) will become `<span class="mdi-robot mdi"></span>`.
+This plugin is compatible with [rehype][https://github.com/rehypejs/rehype]. `mdi` mdast nodes (e.g. `:mdi-robot:`) will become `<i class="mdi-robot mdi"></i>`.
 
+### provide additional classes
+It is possible to provide an additional class(es). This can be handy if you want to provide some basic colors.
+
+```
+:mdi-robot--green: -> <i class="mdi-robot mdi green"></i>
+:mdi-robot--green big: -> <i class="mdi-robot mdi green big"></i>
+```
 ## Installation
 
 ```bash
